@@ -44,23 +44,6 @@ window.addEventListener("DOMContentLoaded", function(){
 divs[i].addEventListener("click", selectColor);//console.log(getSelectedColor());
 
     }
-    
-    let mainDivs = document.querySelectorAll('main > div > div');
-    for(let i = 0; i < mainDivs.length; i++) {
-        let div = mainDivs[i];
-        div.addEventListener('click', function(event) {
-            let element = event.target;
-            console.log(element);
-            let color = getSelectedColor();
-            if (color !== null) {
-                if (event.target.style.backgroundColor) {
-                    event.target.style.backgroundColor = "";
-                } else {
-                    event.target.style.backgroundColor = color;
-                }
-            }
-        })
-    }
 
       /*let headerDivs = document.querySelectorAll('header > div');
     headerDivs.forEach(function(div){
