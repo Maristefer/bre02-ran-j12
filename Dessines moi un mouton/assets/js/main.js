@@ -24,7 +24,7 @@ function loadPalette(palette)
     // le code de l'étape 1 se passe ici
     let divs = document.querySelectorAll("header div");
     
-    //console.log(divs);
+    //console.log(divs); Affiche sous forme de tablo les div du header
     
     for(let i = 0; i < divs.length; i++) {
         
@@ -44,7 +44,7 @@ window.addEventListener("DOMContentLoaded", function(){
 divs[i].addEventListener("click", selectColor);//console.log(getSelectedColor());
 
     }
-
+//La méthode forEach()permet d'exécuter une fonction donnée sur chaque élément du tableau
       /*let headerDivs = document.querySelectorAll('header > div');
     headerDivs.forEach(function(div){
       div.addEventListener("click", selectColor);
